@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class DiceRunner{
 	public static void main(String[]args){
 
@@ -13,6 +15,26 @@ public class DiceRunner{
 		System.out.println(die2);
 		System.out.println("Number of rolls: "+count+"\n");
 	}
+
+	//test2
+
+	ArrayList<Die> list = new ArrayList<>();
+
+	boolean b = true;
+	Die die3 = new Die();
+
+	while(b==true){
+		int noSides = (int)(Math.random()*17)+4;
+		die3 = new Die(noSides);
+		list.add(die3);
+
+		System.out.println(list);
+
+		if((addDie(die3))== -1)
+			b = false;
+
+	}
+
 
 
 

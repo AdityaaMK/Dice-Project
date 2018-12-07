@@ -1,10 +1,11 @@
 import java.util.ArrayList;
+
 public class DiceHolder{
 
 	private ArrayList dieCup;
 
 	public DiceHolder(){
-		dieCup= new ArrayList<>();
+		dieCup = new ArrayList<>();
 	}
 
 	public int addDie(Die die){
@@ -21,7 +22,6 @@ public class DiceHolder{
 			for(int i=0; i<dieCup.size(); i++){
 					dieCup.get(i).roll();
 			}
-
 	}
 
 	public String toString(){
@@ -29,9 +29,5 @@ public class DiceHolder{
 			return dieCup.get(i).toString()+"\n";
 	}
 
-
 	}
-
-
-
 }
