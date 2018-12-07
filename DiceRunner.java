@@ -6,7 +6,9 @@ public class DiceRunner{
 	Die die1 = new Die();
 	Die die2 = new Die();
 
-	int count = 0; //test1
+	//test1
+
+	int count = 0;
 	while((die1.getValue()!=1 || die2.getValue()!=1)){
 		count++;
 		die1.roll();
@@ -16,31 +18,27 @@ public class DiceRunner{
 		System.out.println("Number of rolls: "+count+"\n");
 	}
 
+
 	//test2
 
-	ArrayList<Die> list = new ArrayList<>();
-
 	boolean b = true;
-	Die die3 = new Die();
 	DiceHolder diceHolder = new DiceHolder();
 	int one = 0;
 
 	while(b==true){
-		int noSides = (int)(Math.random()*17)+4;
-		die3 = new Die(noSides);
-		list.add(die3);
 
-		one = diceholder.addDie(die3);
+		one = diceHolder.addDie(new Die((int)(Math.random()*17)+4));
 
-		System.out.println(list);
-
-		if(one == -1)
+		if(one == -1){
 			b = false;
-
+			break;
+		}
+		System.out.println(diceHolder);
 	}
+		System.out.println();
 
-
-
+		diceHolder.shake();
+		System.out.println(diceHolder);
 
 	}
 }
