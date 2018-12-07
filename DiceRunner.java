@@ -22,15 +22,19 @@ public class DiceRunner{
 
 	boolean b = true;
 	Die die3 = new Die();
+	DiceHolder diceHolder = new DiceHolder();
+	int one = 0;
 
 	while(b==true){
 		int noSides = (int)(Math.random()*17)+4;
 		die3 = new Die(noSides);
 		list.add(die3);
 
+		one = diceholder.addDie(die3);
+
 		System.out.println(list);
 
-		if((addDie(die3))== -1)
+		if(one == -1)
 			b = false;
 
 	}
