@@ -25,12 +25,13 @@ public class DiceHolder{
 	}
 
 	public String toString(){
+		String a="";
 		for(int i=0; i<dieCup.size(); i++){
-			return dieCup.get(i).toString()+"\n";
+			a+=dieCup.get(i).toString()+"\n";
+	}
+	return a;
+
 	}
 
 
-	}
-
-
-
+}
