@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 public class DiceHolder{
-
 	private ArrayList<Die> dieCup;
 
 	public DiceHolder(){
@@ -31,9 +30,4 @@ public class DiceHolder{
 	}
 		return a;
 	}
-
 }
-
-
-
-
