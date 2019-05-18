@@ -27,6 +27,4 @@ public class Die{
 	public String toString(){
 		return "Number of sides: "+sides+", Value: "+value;
 	}
-
-
 }
