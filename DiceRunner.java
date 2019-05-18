@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class DiceRunner{
 	public static void main(String[]args){
-
 	Die die1 = new Die();
 	Die die2 = new Die();
 
@@ -18,15 +17,13 @@ public class DiceRunner{
 		System.out.println("Number of rolls: "+count+"\n");
 	}
 
-
 	//test2
 
 	boolean b = true;
 	DiceHolder diceHolder = new DiceHolder();
 	int one = 0;
 
-	while(b==true){
-
+	while(b){
 		one = diceHolder.addDie(new Die((int)(Math.random()*17)+4));
 
 		if(one == -1){
@@ -39,6 +36,5 @@ public class DiceRunner{
 
 		diceHolder.shake();
 		System.out.println(diceHolder);
-
 	}
 }
